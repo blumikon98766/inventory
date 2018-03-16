@@ -9,8 +9,6 @@ public interface InventoryRepository {
 
     void save(Inventory inventory);
 
-    //public Optional<Inventory> checkAndTake(String skuCode);
-
     boolean ifExist(String skuCode);
 
     public List<Inventory> getAll();

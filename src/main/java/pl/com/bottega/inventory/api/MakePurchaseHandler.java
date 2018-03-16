@@ -86,9 +86,4 @@ public class MakePurchaseHandler implements Handler<MakePurchaseCommand, MakePur
     public Class<? extends Validatable> getSupportedCommandClass() {
         return MakePurchaseCommand.class;
     }
-
-//    @Override
-//    public boolean canHandle(Command command) {
-//        return false;
-//    }
 }

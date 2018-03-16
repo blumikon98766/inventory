@@ -25,25 +25,4 @@ public class ErrorHandlers {
 	}
 
 
-
-
-//	@ExceptionHandler(InvalidCommandException.class)
-//	public ResponseEntity<Validatable.ValidationErrors> handleInvalidCommandException(InvalidCommandException ex) {
-//		HttpHeaders headers = new HttpHeaders();
-//		headers.set(HttpHeaders.CONTENT_TYPE, APPLICATION_JSON);
-//		return new ResponseEntity<>(
-//				ex.getValidationErrors(),
-//				headers,
-//				HttpStatus.UNPROCESSABLE_ENTITY
-//		);
-//	}
-
-
-
-
-
-//    @ExceptionHandler(InvalidCommandException.class)
-//    public ResponseEntity handleInvalidCommand(InvalidCommandException ex) {
-//        return new ResponseEntity(ex.getValidationErrors(), HttpStatus.UNPROCESSABLE_ENTITY);
-//    }
 }

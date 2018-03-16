@@ -10,9 +10,6 @@ import javax.persistence.Id;
 @Entity
 public class Inventory {
 
-//    @Id
-//    @GeneratedValue
-//    private Long id;
     @Id
     @Column
     private String skuCode;

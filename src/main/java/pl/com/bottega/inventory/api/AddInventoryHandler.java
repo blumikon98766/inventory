@@ -37,11 +37,6 @@ public class AddInventoryHandler implements Handler<AddInventoryCommand, Void>{
         return null;
     }
 
-//    private void chechCurrency(AddInventoryCommand command, Inventory inventory) {
-//        List<Inventory> list = jpaInventoryRepository.checkPutInventory(command);
-//
-//    }
-
     @Override
     public Class<? extends Validatable> getSupportedCommandClass() {
         return AddInventoryCommand.class;

@@ -19,14 +19,6 @@ public class InventoryController {
         this.gateway = gateway;
     }
 
-//
-//    public void addInventory(@RequestBody String skuCode,
-//                             @RequestBody Integer amount){
-//        AddInventoryCommand command = new AddInventoryCommand();
-//        command.setSkuCode(skuCode);
-//        command.setamount(amount);
-
-
     @PostMapping("/inventory")
     public void addInventory(@RequestBody AddInventoryCommand command){
         gateway.execute(command);
